@@ -1,0 +1,24 @@
+FUNCTION isPrime(N):
+    // Handle special cases
+    IF N <= 1 THEN
+        RETURN "Not Prime"
+    END IF
+    IF N == 2 THEN
+        RETURN "Prime"
+    END IF
+
+    // Handle even numbers greater than 2
+    IF N MOD 2 == 0 THEN
+        RETURN "Not Prime"
+    END IF
+
+    // Check for odd divisors from 3 up to sqrt(N)
+    FOR i FROM 3 TO SQRT(N) STEP 2
+        IF N MOD i == 0 THEN
+            RETURN "Not Prime"
+        END IF
+    END FOR
+
+    // If no divisors are found, N is prime
+    RETURN "Prime"
+END FUNCTION
