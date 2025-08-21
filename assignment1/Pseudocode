@@ -1,0 +1,8 @@
+BEGIN
+    INPUT N
+    SET Result = 1
+    FOR i = 1 TO N DO
+        Result = Result * i
+    END FOR
+    OUTPUT Result
+END
