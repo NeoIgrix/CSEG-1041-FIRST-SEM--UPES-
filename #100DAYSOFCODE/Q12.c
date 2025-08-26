@@ -8,7 +8,7 @@ int main() {
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    if (num >= 0) {               // First check: non-negative?
+    if (num >= 0) {               
         if (num == 0) {
             printf("The number is Zero.\n");
         } else {
@@ -20,3 +20,4 @@ int main() {
 
     return 0;
 }
+
