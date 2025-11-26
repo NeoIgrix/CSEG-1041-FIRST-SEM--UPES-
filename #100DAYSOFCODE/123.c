@@ -34,7 +34,7 @@ int main() {
         prev_char = ch;
     }
 
-    // Count the last word if the file doesn't end with a newline
+    
     if (in_word) {
         word_count++;
     }
@@ -46,4 +46,5 @@ int main() {
     printf("Total lines: %ld\n", line_count);
 
     return 0;
+
 }
