@@ -14,7 +14,7 @@ void mergeSortedArrays(int arr1[], int m, int arr2[], int n) {
         }
     }
 
-    // Copy any remaining elements from either array
+   
     while (i < m) {
         merged[k++] = arr1[i++];
     }
@@ -22,7 +22,7 @@ void mergeSortedArrays(int arr1[], int m, int arr2[], int n) {
         merged[k++] = arr2[j++];
     }
 
-    // Print the merged array
+    
     printf("Merged array: ");
     for (i = 0; i < m + n; i++) {
         printf("%d ", merged[i]);
@@ -33,7 +33,7 @@ void mergeSortedArrays(int arr1[], int m, int arr2[], int n) {
 int main() {
     int m, n;
 
-    // Input size of first array
+
     printf("Enter size of first array: ");
     scanf("%d", &m);
     int arr1[m];
@@ -42,7 +42,7 @@ int main() {
         scanf("%d", &arr1[i]);
     }
 
-    // Input size of second array
+    
     printf("Enter size of second array: ");
     scanf("%d", &n);
     int arr2[n];
@@ -55,3 +55,4 @@ int main() {
 
     return 0;
 }
+
