@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int findMissingNumber(int arr[], int n) {
-    int total = (n * (n + 1)) / 2;  // Sum of first n natural numbers
+    int total = (n * (n + 1)) / 2; 
     int sum = 0;
     for (int i = 0; i < n - 1; i++) {
         sum += arr[i];
@@ -14,7 +14,7 @@ int findMissingNumber(int arr[], int n) {
 int main() {
     int n;
 
-    // Input size of array
+   
     printf("Enter size of array: ");
     scanf("%d", &n);
     int arr[n - 1];
@@ -28,3 +28,4 @@ int main() {
 
     return 0;
 }
+
