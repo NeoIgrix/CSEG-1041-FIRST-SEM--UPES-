@@ -10,13 +10,13 @@ int findRepeatedElement(int arr[], int n) {
         }
         seen[arr[i]] = 1;
     }
-    return -1;  // Should never reach here if input is valid
+    return -1;  
 }
 
 int main() {
     int n;
 
-    // Input size of array
+    
     printf("Enter size of array: ");
     scanf("%d", &n);
     int arr[n];
@@ -30,3 +30,4 @@ int main() {
 
     return 0;
 }
+
