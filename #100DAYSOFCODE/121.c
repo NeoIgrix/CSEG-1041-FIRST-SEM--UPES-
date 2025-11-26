@@ -12,13 +12,13 @@ int main() {
     char name[100];
     int age;
 
-    // Input user data
+   
     printf("Enter your name: ");
     fgets(name, sizeof(name), stdin);
     printf("Enter your age: ");
     scanf("%d", &age);
 
-    // Write data to file
+   
     fprintf(file, "Name: %s", name);
     fprintf(file, "Age: %d\n", age);
 
@@ -27,3 +27,4 @@ int main() {
 
     return 0;
 }
+
